@@ -4,7 +4,7 @@
   "description": "quiz api that contain users and quiz data and manage the hole requests",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js"
   },
   "author": "Debbache Ala Eddine",
   "license": "ISC",
