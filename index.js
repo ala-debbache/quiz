@@ -8,7 +8,6 @@ const completedRouter = require('./routes/completed');
 
 dotenv.config();
 const app = express();
-const port = 3000;
 
 app.use(bodyParser.json());
 app.use("/quizzes",quizzesRouter);
@@ -21,4 +20,4 @@ app.get("/",(req,res)=>{
     res.sendFile(__dirname + '/public/index.html');
 });
 
-app.listen(port,()=> console.log(`Server running on http://localhost:${port}`));
+app.listen(process.env.PORT || 3000,()=> console.log(`Server running`));
